@@ -1,0 +1,83 @@
+
+/* iPad Styles (Portrait)
+*********************************************************************************************/
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+
+	body {
+	width: 768px;
+	}
+	
+	#content {
+	width: 540px;
+	left: 0;
+	}
+	
+	#menu {
+	left: 540px;
+	}
+	
+	.post-header {
+	width: 440px;
+	overflow: hidden;
+	}
+	
+	.post-header-video {
+	width: 440px;
+	height: 247px;
+	}
+	
+	.post-comment #respond {
+	width: 390px;
+	}
+	
+	.grid-vertical-right,
+	#respond a {
+	display: none;
+	}
+	
+}
+
+/* iPad Styles (Landscape)
+*********************************************************************************************/
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+
+	body {
+	width: 1024px;
+	}
+	
+	#content {
+	width: 760px;
+	left: 0;
+	}
+	
+	#menu {
+	left: 760px;
+	}
+	
+	.post-header {
+	width: 660px;
+	overflow: hidden;
+	}
+	
+	.post-header-video {
+	width: 660px;
+	height: 371px;
+	}
+	
+	.post-comment #respond {
+	width: 610px;
+	}
+	
+	#respond a {
+	display: none;
+	}
+
+}

@@ -1,0 +1,15 @@
+# Version 1.1.1 (06.19.12)
+FIXED: White Content Background Cut Off in Posts & Pages on Scroll (functions.php, style.css)
+
+# Version 1.1.0 (04.12.12)
+FIXED: Pagination on Home Page if Home Page Category is Enabled (index.php, options.php, foreword.php)
+FIXED: Broken Layout on Video Posts in Desktop Version (style.css)
+FIXED: Home Menu Item Color Fix When on Home Page (foreword.php)
+REVISED: Mobile Optimization Updates (style.css, style-iphone.css, style-ipad.css, header.php. functions.php, foreword.php)
+REVISED: Title Tag Updated to Display Site Name and Post Title (header.php)
+
+# Version 1.0.1 (10.01.11)
+REVISED: Updated Theme Description (style.css)
+
+# Version 1.0.0 (09.29.11)
+NEW: Initial Release

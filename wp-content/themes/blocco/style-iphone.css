@@ -1,0 +1,225 @@
+
+/* iPhone Styles (Portrait)
+*********************************************************************************************/
+
+@media only screen 
+and (min-width: 320px) 
+and (max-width: 320px) {
+	
+	#menu,
+	#foreword img,
+	.post-header,
+	#respond a,
+	#menu-mobile {
+	display: none;
+	}
+
+	body {
+	width: 320px;
+	}
+	
+	#content {
+	width: 320px;
+	left: 0;
+	overflow: hidden;
+	}
+	
+	#menu-mobile {
+	background: #000000 url('images/hatch-dark.png') repeat;
+	width: 220px;
+	height: 100%;
+	padding: 40px 50px 0;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 20;
+	}
+	
+	#menu-mobile ul {
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+	}
+	
+	#menu-mobile li a {
+	margin: 10px 10px 0 0;
+	}
+	
+	#menu-mobile-left {
+	position: fixed;
+	display: block;
+	top: 50px;
+	left: 0;
+	z-index: 20;
+	}
+	
+	#menu-mobile-left ul {
+	float: left;
+	}
+	
+	#menu-mobile-left li a {
+	border-left: none;
+	-webkit-border-top-left-radius: 0;
+	-webkit-border-bottom-left-radius: 0;
+	-moz-border-radius-topleft: 0;
+	-moz-border-radius-bottomleft: 0;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	margin-bottom: 5px;
+	padding-right: 12px;
+	padding-left: 10px;
+	-webkit-transition-duration: .3s;
+	-moz-transition-duration: .3s;
+	}
+	
+	#menu-mobile-left li a:hover {
+	padding-left: 10px;
+	}
+	
+	#menu-mobile-left ul.home-menu li a {
+	padding-right: 12px;
+	padding-left: 11px;
+	}
+	
+	.post-header-video {
+	width: 220px;
+	height: 123px;
+	margin-bottom: -2px;
+	}
+	
+	.post-sidebar {
+	width: 220px;
+	float: left;
+	margin: 0 0 46px 0;
+	}
+	
+	.post-sidebar .has-thumbnail {
+	margin-top: -2px;
+	margin-bottom: 221px;
+	}
+	
+	.post-sidebar .no-thumbnail {
+	margin-top: 0;
+	margin-bottom: 221px;
+	}
+	
+	.post-sidebar .thumbnail-mobile {
+	display: block;
+	}
+	
+	.post-sidebar .thumbnail-mobile img {
+	width: 220px;
+	height: 220px;
+	}
+	
+	#comments .avatar {
+	display: none;
+	}
+	
+	.post-comment-text {
+	padding-left: 0;
+	}
+	
+	.post-comment #respond {
+	width: 220px;
+	margin-left: 0;
+	}
+	
+	.comment-form-author,
+	.comment-form-comment,
+	.post-comment .comment-form-comment {
+	width: 220px;
+	}
+	
+	.comment-form-author input,
+	.comment-form-comment textarea,
+	.post-comment .comment-form-comment textarea {
+	width: 198px;
+	}
+	
+}
+
+/* iPhone Styles (Landscape)
+*********************************************************************************************/
+
+@media only screen 
+and (min-width: 480px) 
+and (max-width: 767px) {
+
+	#foreword img,
+	.post-header,
+	#respond a,
+	#menu-mobile {
+	display: none;
+	}
+	
+	body {
+	width: 480px;
+	}
+	
+	#content {
+	width: 320px;
+	left: 0;
+	}
+	
+	#menu {
+	left: 320px;
+	}
+	
+	.post-header-video {
+	width: 220px;
+	height: 123px;
+	margin-bottom: -2px;
+	}
+	
+	.post-sidebar {
+	width: 220px;
+	float: left;
+	margin: 0 0 46px 0;
+	}
+	
+	.post-sidebar .has-thumbnail {
+	margin-top: -2px;
+	margin-bottom: 221px;
+	}
+	
+	.post-sidebar .no-thumbnail {
+	margin-top: 0;
+	margin-bottom: 221px;
+	}
+	
+	.post-sidebar .thumbnail-mobile {
+	display: block;
+	}
+	
+	.post-sidebar .thumbnail-mobile img {
+	width: 220px;
+	height: 220px;
+	}
+	
+	#comments .avatar {
+	display: none;
+	}
+	
+	.post-comment-text {
+	padding-left: 0;
+	}
+	
+	.post-comment #respond {
+	width: 220px;
+	margin-left: 0;
+	}
+	
+	.comment-form-author,
+	.comment-form-comment,
+	.post-comment .comment-form-comment {
+	width: 220px;
+	}
+	
+	.comment-form-author input,
+	.comment-form-comment textarea,
+	.post-comment .comment-form-comment textarea {
+	width: 198px;
+	}
+
+}
