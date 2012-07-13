@@ -21,7 +21,7 @@ html,body{margin:0;padding:0}h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,a
 *********************************************************************************************/
 
 html, body {
-background: #000000 url('images/hatch-dark.png') repeat;
+background: #f1a947 url('images/body-bg.jpg') no-repeat fixed;
 height: 100%;
 }
 
@@ -72,6 +72,19 @@ line-height: inherit;
 .muted {
 color: #E6E6E6;
 }
+
+/* fonts
+*********************************************************************************************/
+
+@font-face {
+	font-family: 'OpenSans-Semibold';
+	src: url('fonts/OpenSans-Semibold.eot');
+	src: local('☺'), url('fonts/OpenSans-Semibold.woff') format('woff'), url('fonts/OpenSans-Semibold.ttf') format('truetype'), url('fonts/OpenSans-Semibold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 
 /* Heading Styles
 *********************************************************************************************/
@@ -439,13 +452,13 @@ padding: 3px 8px 4px;
 *********************************************************************************************/
 
 #foreword {
-width: 200px;
+width: 315px;
 float: left;
 }
 
 #foreword img {
 float: right;
-margin: 50px -20px 0 0;
+margin: 50px 0 0 0;
 }
 
 /* Menu & Pagination Styles
@@ -454,7 +467,7 @@ margin: 50px -20px 0 0;
 #menu {
 position: absolute;
 top: 50px;
-left: 960px;
+left: 1075px;
 z-index: 5;
 }
 
@@ -525,13 +538,13 @@ padding: 4px 2px 4px 2px;
 *********************************************************************************************/
 
 #content {
-background: #FFFFFF url('images/hatch-light.png') repeat;
+background: #FFFFFF;
 box-shadow: 0px 0px 2px #333333;
 -moz-box-shadow: 0px 0px 2px #333333;
 -webkit-box-shadow: 0px 0px 2px #333333;
 width: 760px;
 position: absolute;
-left: 200px;
+left: 315px;
 z-index: 15;
 min-height: 100%;
 }
@@ -539,7 +552,7 @@ min-height: 100%;
 #content-gallery,
 #content-single {
 float: left;
-margin: 50px;
+margin: 50px 0px 50px 50px;
 }
 
 /* Gallery Item Styles
@@ -904,4 +917,53 @@ margin-right: 0;
 
 #respond .logged-in-as {
 display: none;
+}
+
+.blogroll {
+	list-style: none;
+	overflow: hidden;
+}
+
+.linkcat{
+	list-style: none;
+}
+
+.linkcat h2{
+	display: none;
+}
+
+.blogroll li{
+	float: left;
+	
+}
+.blogroll li img{
+	width: 218px;
+	height: 218px;
+}
+.blogroll li{
+	background: url('images/home-box-bg.jpg') no-repeat left top;
+	width: 218px;
+	height: 218px;
+	display: block;
+	text-align: center;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-family: "OpenSans-Semibold";
+	font-weight: normal;
+	text-shadow: 2px 2px 0px #000000;
+	filter: dropshadow(color=#000000, offx=1, offy=1);
+	margin:  0 3px 3px 0;
+}
+.blogroll li a{
+	color: #ffffff;
+	display: block;
+	height: 218px;
+
+}
+.blogroll li a:hover{
+	background: url('images/home-box-bg-hover.png') no-repeat left top;
+}
+
+.blogroll li a:hover img{
+	
 }
