@@ -3,7 +3,15 @@
 <div id="content" class="<?php if (is_home()) { echo 'is-home'; } ?>">
 	<div id="content-gallery">
 	
-	<?php mylinkorder_list_bookmarks('orderby=order&category_orderby=order'); ?>
+	<?php mylinkorder_list_bookmarks(array(
+	'orderby' => 'order',
+	'category_orderby' => 'order',
+	'show_description' => 1,
+	'between' => '<br />',
+	'category_before' => '<li id=%id class=%class>',
+	'category_after' => '</li>'
+	)
+	); ?>
 	
 		<?php if (is_home()) {
 			if (of_get_option("enable_home_category")) { 
