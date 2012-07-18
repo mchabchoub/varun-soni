@@ -46,11 +46,9 @@ Designed and Built by Press75.com
 	<link rel="shortcut icon" href="<?php echo $favicon_link; ?>" />
 	<link rel="apple-touch-icon" href="<?php echo $favicon_link; ?>" />
 	<?php } ; ?>
-	
 	<?php if (is_singular() && get_option('thread_comments')) wp_enqueue_script('comment-reply'); ?>
 	
 	<?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
 	<?php get_template_part( 'foreword' ); ?>

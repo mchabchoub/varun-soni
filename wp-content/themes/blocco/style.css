@@ -953,18 +953,32 @@ display: none;
 	text-shadow: 2px 2px 0px #000000;
 	filter: dropshadow(color=#000000, offx=1, offy=1);
 	margin:  0 3px 3px 0;
+	position: relative
 }
 .blogroll li a{
 	color: #ffffff;
 	display: block;
 	height: 218px;
-	line-height: 209px;
 
 }
-.blogroll li a:hover{
-	background: url('images/home-box-bg-hover.png') no-repeat left top;
-}
 
-.blogroll li a:hover img{
+.blogroll li#idname-12 a, .blogroll li#idname-7 a, .blogroll li#idname-5 a, .blogroll li#idname-3 a{
+	padding-top: 95px;
 	
+}
+.blogroll li#idname-14 a{
+	padding-top: 70px;
+}
+
+.blogroll li a.myhover{
+	position: absolute;
+	z-index: 9999;
+	width: 218px;
+	height: 218px;
+	left: 0;
+	top: 0;
+
+}
+.blogroll li a.myhover:hover{
+	background: url('images/home-box-bg-hover.png') no-repeat left top;
 }
