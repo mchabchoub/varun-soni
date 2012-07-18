@@ -8,8 +8,7 @@
 	        	$(this).append('<a class="myhover"></a>');
 	            $(this).addClass('classname');
 	            $(this).attr('id', 'idname-'+idcount);
-	            var index = $('.xoxo li').index($(this));
-	            var a_href = $('.xoxo li a').eq(index-1).attr('href');
+	            var a_href = $(this).find('a:not(.myhover)').attr('href');
 	            console.log(a_href);
 	            $('.xoxo li a.myhover').attr('href', a_href );
 	            idcount++;
