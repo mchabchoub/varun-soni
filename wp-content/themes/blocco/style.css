@@ -49,7 +49,10 @@ color: #404040;
 }
 
 a:hover  {
-color: #808080;
+color: #e7740f;
+}
+a:hover small{
+color: #e7740f;
 }
 
 .fade:hover {
@@ -704,6 +707,17 @@ float: left;
 .post-content p{
 	margin-bottom:	11px;
 }
+
+.post-content p small{
+	color:	#666666; font-size:	12px;
+	}
+
+.post-content p a.active-line, .post-content p a:hover, .post-content p a:hover small{
+	color:	#E7740F;
+	}
+
+
+
 .post-content p img {
 }
 
