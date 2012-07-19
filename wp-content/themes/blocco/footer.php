@@ -9,7 +9,6 @@
 	            $(this).addClass('classname');
 	            $(this).attr('id', 'idname-'+idcount);
 	            var a_href = $(this).find('a:not(.myhover)').attr('href');
-	            console.log(a_href);
 	            $(this).find('.myhover').attr('href', a_href );
 	            idcount++;
 	        });

@@ -15,7 +15,9 @@ Tags: white, black, two-columns, custom-menu, featured-images, theme-options
 /* CSS Reset (DO NOT EDIT)
 *********************************************************************************************/
 
-html,body{margin:0;padding:0}h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,cite,code,del,dfn,em,img,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,form,label,legend,button,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;font-weight:normal;font-style:normal;font-size:100%;line-height:1;font-family:inherit}table{border-collapse:collapse;border-spacing:0}ol,ul{list-style:none}q:before,q:after,blockquote:before,blockquote:after{content:""}header,section,footer,article,aside{display:block}input,textarea{border:none;outline:none;}a{text-decoration:none;}body{-webkit-tap-highlight-color:#FFFFAF}::selection{background:#FFFFAF}::-moz-selection{background:#FFFFAF}img::selection{background:transparent}img::-moz-selection{background:transparent}
+html,body{margin:0;padding:0}h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,cite,code,del,dfn,em,img,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,form,label,legend,button,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;font-weight:normal;font-style:normal;font-size:100%;line-height:1;font-family:inherit}table{border-collapse:collapse;border-spacing:0}ol,ul{list-style:none}q:before,q:after,blockquote:before,blockquote:after{content:""}header,section,footer,article,aside{display:block}input,textarea{border:none;outline:none;}a{text-decoration:none;}body{-webkit-tap-highlight-color:#FFFFAF}::selection{background:#36322f; color:	#fff;
+}::-moz-selection{background:#36322f; color:	#fff;
+}img::selection{background:transparent}img::-moz-selection{background:transparent}
 
 /* Primary Background
 *********************************************************************************************/
@@ -84,6 +86,25 @@ color: #E6E6E6;
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'OpenSans-Regular';
+	src: url('fonts/OpenSans-Regular.eot');
+	src: local('☺'), url('fonts/OpenSans-Regular.woff') format('woff'), url('fonts/OpenSans-Regular.ttf') format('truetype'), url('fonts/OpenSans-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'OpenSans-Bold';
+	src: url('fonts/OpenSans-Bold.eot');
+	src: local('☺'), url('fonts/OpenSans-Bold.woff') format('woff'), url('fonts/OpenSans-Bold.ttf') format('truetype'), url('fonts/OpenSans-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
 
 
 /* Heading Styles
@@ -131,7 +152,7 @@ text-transform: uppercase;
 *********************************************************************************************/
 
 p {
-line-height: 18px;
+line-height: 25px;
 margin-bottom: 10px;
 }
 
@@ -208,24 +229,30 @@ box-shadow:0 0 15px #C8C8C8;
 #submit,
 #respond a,
 #search-form input {
-background: #D8D8D8;
-background: linear-gradient(top, #EFEFEF, #D8D8D8) #D8D8D8;
-background: -moz-linear-gradient(top, #EFEFEF, #D8D8D8) #D8D8D8;
-background: -webkit-gradient(linear, left top, left bottom, from(#EFEFEF), to(#D8D8D8)) #D8D8D8;
-border: 1px solid #ABABAB;
+background-image: linear-gradient(bottom, rgb(48,48,43) 2%, rgb(63,60,57) 51%, rgb(76,75,71) 76%);
+background-image: -o-linear-gradient(bottom, rgb(48,48,43) 2%, rgb(63,60,57) 51%, rgb(76,75,71) 76%);
+background-image: -moz-linear-gradient(bottom, rgb(48,48,43) 2%, rgb(63,60,57) 51%, rgb(76,75,71) 76%);
+background-image: -webkit-linear-gradient(bottom, rgb(48,48,43) 2%, rgb(63,60,57) 51%, rgb(76,75,71) 76%);
+background-image: -ms-linear-gradient(bottom, rgb(48,48,43) 2%, rgb(63,60,57) 51%, rgb(76,75,71) 76%);
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.02, rgb(48,48,43)),
+	color-stop(0.51, rgb(63,60,57)),
+	color-stop(0.76, rgb(76,75,71))
+);
+border: 1px solid #0e0e0d;
 border-radius: 20px;
 -moz-border-radius: 20px;
 -webkit-border-radius: 20px;
-box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 1px 1px rgba(255, 255, 255, .8) inset;
--moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 1px 1px rgba(255, 255, 255, .8) inset;
--webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 1px 1px rgba(255, 255, 255, .8) inset;
 font-size: 12px;
 font-weight: bold;
-color: #707070;
+color: #fff;
 text-align: center;
 float: left;
 margin-right: 5px;
-padding: 5px 10px 6px;
+padding: 8px 10px 8px;
 -moz-transition-duration: .3s;
 -webkit-transition-duration: .3s;
 }
@@ -236,37 +263,22 @@ padding: 5px 10px 6px;
 #submit:hover,
 #respond a:hover,
 #search-form input:hover {
-background: #E3E3E3;
-background: linear-gradient(top, #F6F6F6, #E3E3E3) #E3E3E3;
-background: -moz-linear-gradient(top, #F6F6F6, #E3E3E3) #E3E3E3;
-background: -webkit-gradient(linear, left top, left bottom, from(#F6F6F6), to(#E3E3E3)) #E3E3E3;
 }
 
 /* Button Styles (Green)
 *********************************************************************************************/
 
 li.green a,
-li.current-menu-item a,
+li.current_page_item a,
 #paginate li a.current-page {
-background: #19A500;
-background: linear-gradient(top, #22D100, #19A500) #19A500;
-background: -moz-linear-gradient(top, #22D100, #19A500) #19A500;
-background: -webkit-gradient(linear, left top, left bottom, from(#22D100), to(#19A500)) #19A500;
-border: 1px solid #1B8800;
-box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 1px 1px rgba(255, 255, 255, .25) inset;
--moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 1px 1px rgba(255, 255, 255, .25) inset;
--webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 1px 1px rgba(255, 255, 255, .25) inset;
-color: #FFFFFF;
-text-shadow: 0 -1px 1px rgba(0, 0, 0, .33);
+color: #e7740f;
+
 }
 
 li.green a:hover,
 li.current-menu-item a:hover,
 #paginate li a.current-page:hover {
-background: #22CC00;
-background: linear-gradient(top, #24D800, #1DB200) #24D800;
-background: -moz-linear-gradient(top, #24D800, #1DB200) #24D800;
-background: -webkit-gradient(linear, left top, left bottom, from(#24D800), to(#1DB200)) #24D800;
+color: #e7740f;
 }
 
 /* Button Styles (Light Blue, Twitter)
@@ -466,7 +478,7 @@ margin: 50px 0 0 0;
 
 #menu {
 position: absolute;
-top: 50px;
+top: 49px;
 left: 1075px;
 z-index: 5;
 }
@@ -489,6 +501,7 @@ margin-bottom: 50px;
 
 #menu ul.home-menu {
 margin-bottom: 0;
+display:	none;
 }
 
 #menu li {
@@ -500,6 +513,9 @@ float: left;
 #paginate li a,
 #search-form input {
 border-left: none;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
 -webkit-border-top-left-radius: 0;
 -webkit-border-bottom-left-radius: 0;
 -moz-border-radius-topleft: 0;
@@ -507,10 +523,13 @@ border-left: none;
 border-top-left-radius: 0;
 border-bottom-left-radius: 0;
 margin-bottom: 5px;
-padding-right: 12px;
-padding-left: 10px;
+padding-right: 22px;
+padding-left: 27px;
 -webkit-transition-duration: .3s;
 -moz-transition-duration: .3s;
+font-family:	'Lucida Sans';
+font-size:	14px;
+text-transform:	capitalize;
 }
 
 a.current-page {
@@ -519,7 +538,7 @@ margin-left: -1px;
 
 #menu li a:hover,
 #paginate li a:hover {
-padding-left: 20px;
+padding-left: 40px;
 }
 
 #search-form input {
@@ -549,19 +568,21 @@ z-index: 15;
 min-height: 100%;
 }
 
-#content-gallery,
-#content-single {
+#content-gallery
+{
 float: left;
 margin: 50px 0px 50px 50px;
+}
+
+#content-single {
+float: left;
+margin: 50px 50px 50px 50px;
 }
 
 /* Gallery Item Styles
 *********************************************************************************************/
 
 .gallery-item {
-width: 220px;
-height: 220px;
-float: left;
 position: relative;
 }
 
@@ -580,19 +601,7 @@ opacity: 0.0;
 
 .gallery-item h2,
 .gallery-item h2 a {
-background: #000000;
-font-size: 31px;
-font-weight: bold;
-color: #FFFFFF;
-line-height: 39px;
-text-transform: uppercase;
-width: 180px;
-height: 187px;
-padding: 12px 20px 20px 19px;
-position: absolute;
-z-index: 5;
-top: 0;
-left: 0;
+
 }
 
 .gallery-item h2 a:hover {
@@ -662,6 +671,11 @@ height: 440px;
 .post-content {
 width: 100%;
 float: left;
+position:	relative;
+font-family:	'OpenSans-Regular';
+color:	#333333;
+font-size:	15px;
+line-height:	25px;
 }
 
 .post-content ul,
@@ -687,14 +701,10 @@ float: right;
 float: left;
 }
 
+.post-content p{
+	margin-bottom:	11px;
+}
 .post-content p img {
-background: #FFFFFF;
-border: 1px solid #CCCCCC;
-border-radius: 3px;
--moz-border-radius: 3px;
--webkit-border-radius: 3px;
-max-width: 100%;
-padding: 3px;
 }
 
 .post-content p img.centered {
@@ -737,9 +747,9 @@ margin: 0 20px 20px 0;
 *********************************************************************************************/
 
 .post-sidebar {
-width: 220px;
-float: right;
-margin: -19px 0 20px 20px;
+position:	absolute;
+left:	26px;
+top:	29px;
 }
 
 .post-sidebar ul {
@@ -749,19 +759,17 @@ margin-bottom: 0;
 }
 
 .post-sidebar .gallery-item {
-background: #EBEBEB;
-color: #808080;
-width: 180px;
-height: auto;
-float: left;
-margin-bottom: 1px;
-padding: 14px 20px;
+
 }
 
 .post-sidebar .gallery-item h2,
 .post-sidebar .gallery-item h2 a {
-width: 181px;
-height: 188px;
+font-family:	"OpenSans-Bold";
+font-weight:	normal;
+color:	#fff;
+text-transform:	uppercase;
+font-size:	40px;
+text-shadow:	0 1px 2px #000;
 }
 
 .post-sidebar .has-thumbnail {
@@ -779,12 +787,6 @@ display: inline;
 .post-sidebar .gallery-item.no-thumbnail.has-video {
 margin-top: 3px;
 margin-bottom: 221px;
-}
-
-.post-sidebar .no-thumbnail {
-margin-top: 19px;
-margin-bottom: 220px;
-padding: 0;
 }
 
 .post-sidebar .gallery-item a {

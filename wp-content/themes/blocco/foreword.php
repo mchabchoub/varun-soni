@@ -25,9 +25,9 @@
 		
 			<?php wp_nav_menu(array('theme_location' => 'first_menu', 'container_class' => 'first-menu')); ?>
 			
-			<?php wp_nav_menu(array('theme_location' => 'second_menu', 'container_class' => 'second-menu')); ?>
+			<?php //wp_nav_menu(array('theme_location' => 'second_menu', 'container_class' => 'second-menu')); ?>
 			
-			<?php wp_nav_menu(array('theme_location' => 'third_menu', 'container_class' => 'third-menu')); ?>
+			<?php //wp_nav_menu(array('theme_location' => 'third_menu', 'container_class' => 'third-menu')); ?>
 		
 		<?php  } ?>
 		
