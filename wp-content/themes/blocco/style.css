@@ -1052,6 +1052,10 @@ display: none;
 	border:	none;
 }
 
+#contact .one-column .right-column p{
+	padding-left:	0px;
+}
+
 #contact .contact-bottom{
 	overflow:	hidden;
 	margin-top:	17px;
