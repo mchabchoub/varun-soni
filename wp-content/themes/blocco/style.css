@@ -44,8 +44,11 @@ text-rendering: optimizeLegibility;
 
 a {
 color: #404040;
--webkit-transition-duration: .3s;
--moz-transition-duration: .3s;
+
+}
+
+a.p-active {
+color: #e7740f;
 }
 
 a:hover  {
@@ -942,6 +945,8 @@ display: none;
 
 .linkcat{
 	list-style: none;
+	overflow:	hidden;
+	clear:	both;
 }
 
 .linkcat h2{
@@ -982,6 +987,20 @@ display: none;
 	padding-top: 95px;
 	
 }
+
+.page .blogroll li#idname-12 a, .page .blogroll li#idname-7 a, .page .blogroll li#idname-5 a, .page .blogroll li#idname-3 a{
+	padding-top: 0;
+	
+}
+
+.page .blogroll li#idname-14 a{
+	padding-top: 70px;
+}
+
+.page .blogroll{
+	padding:	50px 0 50px 50px;
+}
+ 
 .blogroll li#idname-14 a{
 	padding-top: 70px;
 }
@@ -997,4 +1016,95 @@ display: none;
 }
 .blogroll li a.myhover:hover{
 	background: url('images/home-box-bg-hover.png') no-repeat left top;
+}
+
+
+#contact .right-column, #contact .left-column{
+	width:	332px;
+	float:	left;
+}
+
+#contact .right-column{
+	width:	311px;
+	border-left:	1px	solid	#d9d8d8;
+	padding-left:	15px;
+}
+
+#contact .one-column{
+	overflow:	hidden;
+	border-bottom:	1px	solid	#d9d8d8;
+	margin-top:	12px;
+	height:	97px;
+}
+
+#contact .one-column .right-column{
+	border:	none;
+}
+
+#contact .contact-bottom{
+	overflow:	hidden;
+	margin-top:	17px;
+}
+
+
+#contact p{
+	color:	#666666;
+	font-size:	15px;
+	line-height:	26px;
+	margin-bottom:	0px;
+}
+
+#contact p span{
+	color:	#333333;
+	font-size:	15px;
+	font-family: "OpenSans-Semibold";
+}
+
+#contact p span.disply-blk{
+	display:	block;
+}
+#contact p.news-l{
+	background:	none;
+	padding:	0;
+}
+
+#contact p{
+	background:url('images/icon-email.jpg') no-repeat  5px 7px;
+	padding-left:	28px;
+}
+
+#contact p.addrs{
+	background:url('images/icon-address.jpg') no-repeat  5px 7px;
+	margin-bottom:	23px;
+}
+
+#contact p.phone{
+	background:url('images/icon-phone.jpg') no-repeat  5px 7px;
+}
+#contact p.fax{
+	background:url('images/icon-fax.jpg') no-repeat  5px 7px;
+	margin-bottom:	18px;
+}
+#contact input{
+	font-size:	11px;
+	color:	#999999;
+	font-style:	italic;
+	font-family:	"Lucida Sans";
+	width:	205px;
+	float:	left;
+}
+#contact a.submit{
+	background:url('images/btn-signup.jpg')	no-repeat	left	top;
+	width:	77px;
+	height:	33px;
+	display:	block;
+	float:	left;
+	margin:	1px 0 0 3px;
+}
+
+.up-btn{
+	position:	absolute;
+	bottom:	0px;
+	right:	-86px;
+	cursor:	pointer;
 }

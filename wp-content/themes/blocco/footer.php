@@ -12,6 +12,13 @@
 	            $(this).find('.myhover').attr('href', a_href );
 	            idcount++;
 	        });
+	        
+	        $('.up-btn').click(function(){
+	        			$('html, body').animate({
+	        				scrollTop: $('body').offset().top
+	        			}, 1000);
+	        			return false;
+	        		});
 	    });
 	})(jQuery);
 	</script>

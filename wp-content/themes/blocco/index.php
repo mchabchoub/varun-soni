@@ -4,6 +4,7 @@
 	<div id="content-gallery">
 	
 	<?php mylinkorder_list_bookmarks(array(
+	'category_name' => 'Home',
 	'orderby' => 'order',
 	'category_orderby' => 'order',
 	'show_description' => 1,
