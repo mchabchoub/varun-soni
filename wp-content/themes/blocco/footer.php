@@ -12,7 +12,7 @@
 	            $(this).find('.myhover').attr('href', a_href );
 	            idcount++;
 	        });
-	        
+	        $('.xoxo #idname-14').append('<p class="coming-soon">Coming soon</a>');
 	        $('.up-btn').click(function(){
 	        			$('html, body').animate({
 	        				scrollTop: $('body').offset().top

@@ -585,6 +585,11 @@ float: left;
 margin: 50px 50px 50px 50px;
 }
 
+.page #content-single {
+float: left;
+margin: 50px 50px 15px 50px;
+}
+
 /* Gallery Item Styles
 *********************************************************************************************/
 
@@ -997,8 +1002,14 @@ display: none;
 	padding-top: 70px;
 }
 
+.page .blogroll li#idname-8 a{
+	padding-top: 70px;
+}
+
+
+
 .page .blogroll{
-	padding:	50px 0 50px 50px;
+	padding:	0px 0 50px 50px;
 }
  
 .blogroll li#idname-14 a{
@@ -1107,4 +1118,16 @@ display: none;
 	bottom:	0px;
 	right:	-86px;
 	cursor:	pointer;
+}
+
+.blogroll li p.coming-soon{
+	font-size:	14px;
+	font-family:	"Lucida Sans";
+	text-shadow:	none;
+	text-transform:	none;
+	position:	absolute;
+	top:	133px;
+	color:	#fff;
+	left:	62px;
+	
 }

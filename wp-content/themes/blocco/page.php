@@ -22,4 +22,12 @@
 		<img class="up-btn"	src="<?php bloginfo('template_url')	?>/images/up.png"	alt=""	/>
 </div> <!-- content -->
 
+<script type="text/javascript">
+(function($) {
+    $(document).ready(function() {
+        $('.xoxo #idname-8').append('<p class="coming-soon">Coming soon</a>');
+      });
+})(jQuery);
+</script>
+
 <?php get_footer(); ?>
